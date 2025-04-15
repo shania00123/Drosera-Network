@@ -10,7 +10,7 @@
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/rust:1": {}
   },
-  "onCreateCommand": "sudo bash -c 'curl -L https://foundry.paradigm.xyz | bash -s' && ~/.foundry/bin/foundryup",
+  "postCreateCommand": "curl -L https://foundry.paradigm.xyz | bash -s && ~/.foundry/bin/foundryup",
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
